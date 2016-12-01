@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+
+#wrap-body {
+	padding: 10px;
+	width: 960px;
+	margin: 25px auto;
+}
+header {
+	height: 120px;
+	padding: 0 15px;
+}
+#left-content {
+	width: 200px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#second-content {
+	width: 360px; 
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 17px 5px 17px;
+}
+
+#third-content {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#wrap-body {
+		width: 94%;
+	}
+	#left-content {
+		width: 40%;
+		padding: 1% 4%;
+	}
+	#second-content {
+		width: 40%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#third-content {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#left-content {
+		width: auto;
+		float: none;
+	}
+	
+	#second-content {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#third-content {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	#third-content {
+		display: none;
+	}
+
+}
+
+
+#left-content {
+	background: #f8f8f8;
+}
+#third-content {
+	background: #f0efef;
+}
+header, #left-content, #second-content, #third-content {
+	margin-bottom: 5px;
+}
+
+#wrap-body, header, #left-content, #second-content, #third-content, footer {
+	border: solid 1px #ccc;
+}
